@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/datos.js"></script>
+</head>
+<body>
+    <h1>Formulario de datos.</h1>
+    <form action="/datos.js" method="post">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre" id="Nombre">
+        <p></p>
+        <label for="Apellido">Apellido</label>
+        <input type="text" name="Apellido" id="Apellido">
+        <p></p>
+        <label for="DNI">DNI</label>
+        <input type="number" name="DNI" id="DNI">
+        <p></p>
+        <label for="Fecha">Fecha de nacimiento</label>
+        <input type="date" name="Fecha" id="Fecha">
+        <p></p>
+        <label for="Domicilio">Domicilio</label>
+        <input type="text" name="Domicilio" id="Domicilio">
+        <p></p>
+        <label for="Localidad">Localidad</label>
+        <input type="text" name="Localidad" id="Localidad">
+        <p></p>
+
+        <label for="lenguajes">Idiomas que conoces.</label>
+        <p></p>
+            <label for="Español">Español</label>
+            <input type="checkbox" name="Español" value="Español" id="box1">
+            <input type="range" name="Español" id="rango_es" min="0" max="100" value="0">
+            <p></p>
+            <label for="Ingles">Ingles</label>
+            <input type="checkbox" name="Ingles" value="Ingles" id="box2">
+            <input type="range" name="Ingles" id="rango_en" min="0" max="100" value="0">
+            <p></p>
+            <label for="Frances">Frances</label>
+            <input type="checkbox" name="Frances" value="Frances" id="box3">
+            <input type="range" name="Frances" id="rango_fr" min="0" max="100" value="0">
+            <p></p>
+            <label for="Chino">Chino</label>
+            <input type="checkbox" name="Chino" value="Chino" id="box4">
+            <input type="range" name="Chino" id="rango_ch" min="0" max="100" value="0">
+            <p></p>
+            <input type="submit" onclick="datos()">
+            <input type="reset"value="Borrar">
+    </form>
+</body>
+</html>
